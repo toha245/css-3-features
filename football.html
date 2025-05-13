@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <style>
+        .field{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid steelblue;
+            margin: 40px;
+            
+        }
+        .bar{
+            position: relative;
+            z-index: 1;
+        }
+
+        .ball{
+            position: absolute;
+            top: 400px;
+            transition: margin-left 2s;
+            z-index: 2;
+            /* transition: transform 2s ease-in; */
+        }
+
+        .field:hover .ball{
+            margin-left: 880px;
+            top: 400px;
+            /* transform: translate(900px);
+            transform-origin: top right; */
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="box-1">
+            <img src="images/football.png" alt="" class="ball" width="200px">
+        </div>
+        <div class="box-2">
+            <img src="images/bar.png" alt="" class="bar" width="900px">
+        </div>
+    </div>
+</body>
+</html>
